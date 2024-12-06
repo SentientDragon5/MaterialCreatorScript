@@ -98,7 +98,7 @@ namespace UnityEditor
                 {
 
                     var material = new Material(Shader.Find(shaderName));
-                    material.SetTexture("_MainTex", (Texture2D)AssetDatabase.LoadAssetAtPath(objpath, typeof(Texture2D)));
+                    material.SetTexture("_BaseMap", (Texture2D)AssetDatabase.LoadAssetAtPath(objpath, typeof(Texture2D)));
                     AssetDatabase.CreateAsset(material, path + ".mat");
                 }
             }
